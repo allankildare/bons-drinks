@@ -12,49 +12,6 @@
   box-sizing: border-box;
 }
 
-.MainForm {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 .App h1 {
   text-align: center;
-}
-
-.MainForm img, .MainForm form {
-  width: 50%;
-}
-
-.Inputs {
-  display: flex;
-  flex-direction: column;
-}
-
-.Inputs input, textarea {
-  border-radius: 5px;
-  border: 1px solid rgba(92,5,17,.4);
-  outline: none;
-  padding-left: 10px;
-}
-
-.Inputs input {
-  height: 35px;
-}
-
-.Inputs textarea {
-  padding: 10px;
-}
-
-.Inputs button {
-  background-color: #5c0511;
-  color: #fffdf8;
-  font-weight: 700;
-  padding: 8px 10px;
-  font-size: 18px;
-  border-radius: 5px;
-  width: 400px;
-  border: none;
-  align-self: flex-end;
-  cursor: pointer;
 }
