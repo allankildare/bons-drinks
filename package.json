@@ -1,6 +1,7 @@
 {
   "name": "bons-drinks",
   "version": "0.1.0",
+  "author": "Allan Kildare",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
