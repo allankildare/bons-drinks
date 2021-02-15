@@ -1,0 +1,34 @@
+/* header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+.Menu {
+    background-color: var(--white);
+    max-height: 10vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .42);
+    padding: 10px 0 10px 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.NavMenu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.NavMenu li {
+    letter-spacing: .8px;
+    cursor: pointer;
+}
+
+.NavMenu li:hover {
+    transition: .3s ease;
+    color: var(--orange);
+}
+
+.NavMenu .HeaderLogo {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 36px;
+}
