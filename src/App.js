@@ -1,7 +1,6 @@
-import Tarefa from './Tarefa'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import HomeCover from './components/HomeCover/HomeCover'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import HomeCover from './components/HomeCover'
 import './App.css'
 
 function App() {
