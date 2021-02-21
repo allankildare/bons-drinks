@@ -9,9 +9,15 @@ class Header extends Component {
                 <ul>
                     <li>Drinks</li>
                     <li>Sobre nós</li>
-                    <li><h1 className="HeaderLogo">Bons Drinks</h1></li>
+                    <li>
+                        <h1 className="HeaderLogo">
+                            <Link to="/">Bons Drinks</Link>
+                        </h1>
+                    </li>
                     <li>Nosso time</li>
-                    <li><Link to="/contato">Contato</Link></li>
+                    <li>
+                        <Link to="/contato">Contato</Link>
+                    </li>
                 </ul>
             </nav>
         </header>)
