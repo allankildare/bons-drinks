@@ -3,7 +3,7 @@
   --bg: #FFFDF8;
   --black: #101010;
   --red: #5C0511;
-  --orange: #F9AE48;
+  --orange: #d3933a;
 }
 
 * {
@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 
-.App h1 {
-  text-align: center;
+.App {
+  display: grid;
+  grid-template-rows: 10vh 83vh 7vh;
 }
