@@ -1,10 +1,10 @@
 .Form {
     padding: 10px 40px;
-    
 }
 
 .Form h1 {
     text-align: center;
+    color: var(--wine-red);
 }
 
 .MainForm {

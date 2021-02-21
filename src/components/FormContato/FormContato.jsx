@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './../../main.css'
 import './FormContato.css'
 import telephone from '../../assets/img/telephone_contact.jpg'
 
