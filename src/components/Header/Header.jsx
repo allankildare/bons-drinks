@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './Header.css'
+import {Link} from 'react-router-dom'
 class Header extends Component {
     render(){
         return(
@@ -10,7 +11,7 @@ class Header extends Component {
                     <li>Sobre nós</li>
                     <li><h1 className="HeaderLogo">Bons Drinks</h1></li>
                     <li>Nosso time</li>
-                    <li>Contato</li>
+                    <li><Link to="/contato">Contato</Link></li>
                 </ul>
             </nav>
         </header>)

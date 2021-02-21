@@ -1,17 +1,3 @@
-:root {
-  --white: #FFFBEF;
-  --bg: #FFFDF8;
-  --black: #101010;
-  --red: #5C0511;
-  --orange: #d3933a;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .App {
   display: grid;
   grid-template-rows: 10vh 83vh 7vh;

@@ -6,9 +6,7 @@ class FormContato extends Component {
   render() {
     return (
       <div className="Form">
-        <div>
-          <h1>Contato</h1>
-        </div>
+        <h1>Contato</h1>
         <div className="MainForm">
           <img src={telephone} />
           <form className="Inputs">
@@ -19,7 +17,7 @@ class FormContato extends Component {
             <input name="email" type="text" />
 
             <label htmlFor="message">Mensagem:</label>
-            <textarea name="message" rows="15" cols="30" />
+            <textarea name="message" rows="10" />
 
             <button type="submit">Enviar</button>
           </form>

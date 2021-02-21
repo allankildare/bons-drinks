@@ -1,7 +1,9 @@
 import Header from './components/Header'
-import Footer from './components/Footer'
 import HomeCover from './components/HomeCover'
+import Footer from './components/Footer'
+import './main.css'
 import './App.css'
+
 
 function App() {
   return (

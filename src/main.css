@@ -1,0 +1,17 @@
+:root {
+    --white: #FFFBEF;
+    --bg: #FFFDF8;
+    --black: #101010;
+    --wine-red: #5C0511;
+    --orange: #d3933a;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+}
