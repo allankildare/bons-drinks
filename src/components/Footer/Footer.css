@@ -7,4 +7,5 @@
     text-align: center;
     background-color: var(--white);
     padding: 10px 0 5px 0;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 42%);
 }
