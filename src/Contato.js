@@ -10,7 +10,6 @@ function Contato() {
         <div>
             <Header />
             <FormContato />
-            <Input para="nome" tipo="text" id="nome" nome="nome" children="Nome" />
             <Footer />
         </div>
     )
