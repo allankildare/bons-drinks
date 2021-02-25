@@ -4,6 +4,7 @@
     padding: 10px 0 10px 0;
     font-family: 'Open Sans Condensed', sans-serif;
     z-index: 50;
+    grid-area: "header";
 }
 
 .NavMenu ul {

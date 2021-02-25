@@ -1,4 +1,5 @@
 .App {
   display: grid;
   grid-template-rows: 10vh 83vh 7vh;
+  grid-template-areas: "header" "content" "footer";
 }

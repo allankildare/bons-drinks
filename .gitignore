@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# exercicios de aula
+./src/components/Form
+./src/components/Input
