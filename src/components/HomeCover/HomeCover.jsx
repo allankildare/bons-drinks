@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './HomeCover.css'
-class HomeCover extends Component {
-    render() {
-        return (
-            <main className="MainCover">
-                <h1>Bons Drinks</h1>
-            </main>
-        )
-    }
+
+function HomeCover() {
+    return (
+        <main className="mainCover">
+            <h1>Bons Drinks</h1>
+        </main>
+    )
 }
 
 export default HomeCover

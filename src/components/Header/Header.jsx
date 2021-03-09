@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
-class Header extends Component {
-    render(){
-        return(
+
+function Header() {
+    return (
         <header className="Menu" style={{fontSize: '24px', fontWeight: 'bold'}}>
             <nav className="NavMenu">
                 <ul>
@@ -20,8 +20,8 @@ class Header extends Component {
                     </li>
                 </ul>
             </nav>
-        </header>)
-    }
+        </header>
+    )
 }
 
 export default Header

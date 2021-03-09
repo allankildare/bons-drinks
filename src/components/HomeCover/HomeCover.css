@@ -1,4 +1,4 @@
-.MainCover {
+.mainCover {
     background-image: url(../../assets/img/bg_main.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     grid-area: "content";
 }
 
-.MainCover h1 {
+.mainCover h1 {
     font-family: 'Bilbo Swash Caps', cursive;
     color: var(--white);
     font-size: 120px;
