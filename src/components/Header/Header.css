@@ -1,39 +1,73 @@
 .Menu {
-    background-color: var(--white);
+    background-color: var(--gray);
+    color: #fafafa;
+    font-size: 22px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .42);
     padding: 10px 0 10px 0;
-    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
     z-index: 50;
-    grid-area: "header";
+    grid-area: header;
 }
 
-.NavMenu ul {
+.navMenu {
+    max-width: 1440px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navMenu .HeaderLogo {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 36px;
+    width: 20%;
+}
+.navMenu .HeaderLogo a {
+    color: #ececec;
+    transition: .3s ease color;
+}
+
+.navMenu .HeaderLogo a:hover {
+    color: var(--light-purple)
+}
+
+.navMenu ul {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
+    width: 80%;
 }
 
-.NavMenu li {
-    letter-spacing: .8px;
+.navMenu li {
+    margin-left: 100px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.navMenu li:last-child {
+    background-color: var(--purple);
+    font-size: 21px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: .6s ease transform;
 }
 
-.NavMenu li:hover {
+.navMenu li:last-child:hover {
+    transform: scale(.95);
+}
+
+.navMenu li:hover {
     transition: .4s ease;
-    color: var(--orange);
+    color: var(--light-purple);
+    cursor: pointer;
 }
 
-.NavMenu li a, .NavMenu li a:visited {
-    color: #050505;
+.navMenu li a, .navMenu li a:visited {
+    color: #ececec;
     text-decoration: none;
 }
 
-.NavMenu li a:hover {
+.navMenu li a:hover {
     transition: .4s ease;
-    color: var(--orange);
 }
 
-.NavMenu .HeaderLogo {
-    font-family: 'Bilbo Swash Caps', cursive;
-    font-size: 36px;
-}

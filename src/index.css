@@ -1,10 +1,13 @@
 :root {
   --white: #FFFBEF;
+  --gray: rgb(25, 25, 25);
   --bg: #FFFDF8;
   --black: #101010;
   --wine-red: #5C0511;
   --orange: #d3933a;
   --hover-button: #801725;
+  --purple: #b023e8;
+  --light-purple: #be47ed;
 }
 
 * {
@@ -15,5 +18,9 @@
 
 body {
   background-color: var(--bg);
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a, a:visited {
+  text-decoration: none;
 }
