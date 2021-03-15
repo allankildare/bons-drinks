@@ -4,9 +4,10 @@ import Footer from './components/Footer'
 import FormContato from './components/FormContato'
 import './App.css'
 import Input from './components/Input/Input'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import ButtonClick from './components/ButtonClick/ButtonClick'
 import Drinks from './components/Drinks/Drinks'
+import Erro404 from './components/Erro404/Erro404'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 
 function App() {
@@ -18,20 +19,26 @@ function App() {
         <Switch>
           <Route exact path="/">
             <HomeCover />
-            <Input />
-          </Route>
-
-          <Route path="/contato">
-            <FormContato />
-            <ButtonClick />
           </Route>
 
           <Route path="/drinks">
             <Drinks />
           </Route>
+          
+          <Route path="/sobre-nos">
+            <h1 style={{textAlign: 'center'}}>Rota Sobre Nós</h1>
+          </Route>
+
+          <Route path="/nosso-time">
+            <h1 style={{textAlign: 'center'}}>Rota Nosso Time</h1>
+          </Route>
+
+          <Route path="/contato">
+            <FormContato />
+          </Route>
 
           <Route path="*">
-            <h1>Erro 404</h1>
+            <Erro404 />
           </Route>
         </Switch>
         

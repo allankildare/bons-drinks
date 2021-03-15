@@ -15,7 +15,7 @@ function Drinks() {
     useEffect(() => pegaDrinks(), [])
 
     return (
-        <div>
+        <div style={{textAlign:'center'}}>
             <h1>Drinks</h1>
             <p>O nome do drink gostoso é {req.strDrink ? req.strDrink : 'carregando...'}</p>
         </div>

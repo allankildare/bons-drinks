@@ -4,7 +4,7 @@
 
 .formContainer h1 {
     text-align: center;
-    color: var(--wine-red);
+    color: var(--black);
     padding: 10px 0 30px;
     grid-area: title;
 }
@@ -52,8 +52,4 @@ form textarea {
 form label {
     font-size: 20px;
     font-weight: 700;
-}
-
-form button {
-    
 }
