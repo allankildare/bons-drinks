@@ -19,18 +19,18 @@ function Header() {
         display: flex;
         justify-content: space-between;
         
-        .HeaderLogo {
+        .headerLogo {
         font-family: 'Bilbo Swash Caps', cursive;
         font-size: 36px;
         width: 20%;
         }
 
-        .HeaderLogo a {
+        .headerLogo a {
         color: #ececec;
         transition: .3s ease color;
         }
 
-        .HeaderLogo a:hover {
+        .headerLogo a:hover {
             color: var(--light-purple)
         }
 
@@ -61,6 +61,10 @@ function Header() {
             transform: scale(.95);
         }
 
+        li:last-child a:hover {
+            color: #ececec;
+        }
+
         li a, li a:visited {
             color: #ececec;
             text-decoration: none;
@@ -75,12 +79,12 @@ function Header() {
     return (
         <StyledHeader>
             <NavMenu>
-                <h1 className="HeaderLogo">
+                <h1 className="headerLogo">
                     <Link to="/">Bons Drinks</Link>
                 </h1>
                 <ul>
                     <li>
-                        <Link to="/drinks">Drinks</Link>
+                        <Link to="/drinks/">Drinks</Link>
                     </li>
                     <li>
                         <Link to="/sobre-nos">Sobre nós</Link>

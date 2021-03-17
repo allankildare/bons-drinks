@@ -1,10 +1,8 @@
-import Header from './components/Header'
-import HomeCover from './components/HomeCover'
-import Footer from './components/Footer'
-import FormContato from './components/FormContato'
+import Header from './components/Header/Header'
+import HomeCover from './components/HomeCover/HomeCover'
+import Footer from './components/Footer/Footer'
+import FormContato from './components/FormContato/FormContato'
 import './App.css'
-import Input from './components/Input/Input'
-import ButtonClick from './components/ButtonClick/ButtonClick'
 import Drinks from './components/Drinks/Drinks'
 import Erro404 from './components/Erro404/Erro404'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
@@ -21,9 +19,11 @@ function App() {
             <HomeCover />
           </Route>
 
-          <Route path="/drinks">
+          {/* rota de drinks */}
+          <Route path="/drinks/*">
             <Drinks />
           </Route>
+
           
           <Route path="/sobre-nos">
             <h1 style={{textAlign: 'center'}}>Rota Sobre Nós</h1>

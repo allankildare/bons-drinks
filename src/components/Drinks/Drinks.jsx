@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import DrinksBuscar from '../DrinksBuscar/DrinksBuscar'
+import DrinksPopulares from '../DrinksPopulares/DrinksPopulares'
+import { NavLink, Switch, Route } from 'react-router-dom'
 
 function Drinks() {
     const [req, setReq] = useState({})
@@ -18,6 +21,24 @@ function Drinks() {
         <div style={{textAlign:'center'}}>
             <h1>Drinks</h1>
             <p>O nome do drink gostoso é {req.strDrink ? req.strDrink : 'carregando...'}</p>
+
+            <NavLink to="popular">
+                Drinks Populares
+            </NavLink>
+
+            <NavLink to="buscar">
+                Buscar Drinks
+            </NavLink>
+
+            <Switch>
+                <Route path="/drinks/buscar">
+                    <DrinksBuscar />
+                </Route>
+
+                <Route path="/drinks/popular">
+                    <DrinksPopulares />
+                </Route>
+            </Switch>
         </div>
     )
 }
