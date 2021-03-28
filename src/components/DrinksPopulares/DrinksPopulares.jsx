@@ -1,15 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import style from './DrinksPopulares.module.css'
 import styled from 'styled-components'
+import Loading from '../Loading/Loading'
 
 const PopularDrinkStyled = styled.div`
     text-align: left;
     width: 60vw;
-    height: 220px;
-    padding: 10px;
+    height: 260px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 
     img {
         margin-right: 16px;
@@ -98,14 +97,14 @@ function DrinksPopulares() {
 
     const drinks = [mojito, caipirinha, sexOnTheBeach, martini, blueLagoon, cubaLibre, ginAndTonic, margarita, longIslandTea]
 
+    console.log(drinks[5])
     return (
         <div style={{display: 'grid', placeItems: 'center'}}>
-            {drinks.length - 1 < 8 ? 'Carregando...' : 
-            
+            {drinks[0] && drinks[1] && drinks[2] && drinks[3] && drinks[4] && drinks[5] && drinks[6] && drinks[7] && drinks[8] ? 
             (drinks.map(item => {
                 return (
                     <PopularDrinkStyled>
-                        <img src={item.strDrinkThumb} className={style.imgDrink}
+                        <img src={item.strDrinkThumb} width="230px"
                             alt={`Imagem da bebida ${item.strDrink}`} />
                         <div>
                             <h3>{item.strDrink}</h3>
@@ -136,7 +135,7 @@ function DrinksPopulares() {
                         </a>
                     </div>
                 </PopularDrinkStyled>)
-            })) 
+            })) : <Loading />
             }
         </div>
     )
