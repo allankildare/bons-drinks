@@ -84,7 +84,7 @@ function Header() {
                 </h1>
                 <ul>
                     <li>
-                        <Link to="/drinks/">Drinks</Link>
+                        <Link to="/drinks">Drinks</Link>
                     </li>
                     <li>
                         <Link to="/sobre-nos">Sobre nós</Link>
