@@ -1,45 +1,48 @@
-import React, { useState, useEffect } from 'react'
-import DrinksBuscar from '../DrinksBuscar/DrinksBuscar'
-import DrinksPopulares from '../DrinksPopulares/DrinksPopulares'
+import React from 'react'
 import { NavLink, Switch, Route } from 'react-router-dom'
+import style from './Drinks.module.css'
+import DrinksPopulares from '../DrinksPopulares/DrinksPopulares'
+import DrinksBuscar from '../DrinksBuscar/DrinksBuscar'
+import DrinksAleatorios from '../DrinksAleatorios/DrinksAleatorios'
 
 function Drinks() {
-    const [req, setReq] = useState({})
-    
-    async function pegaDrinks() {
-        console.log('useEffect rodou')
-
-        const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
-        const resJSON = await response.json()
-
-        return setReq(resJSON.drinks[0])
-    }
-
-    useEffect(() => pegaDrinks(), [])
-
     return (
         <div style={{textAlign:'center'}}>
-            <h1>Drinks</h1>
-            <p>O nome do drink gostoso é {req.strDrink ? req.strDrink : 'carregando...'}</p>
+            <h1 style={{ margin: '20px 0 30px'}}>Drinks</h1>
 
-            <NavLink to="popular">
-                Drinks Populares
-            </NavLink>
+        <NavLink to="popular"  style={{ marginRight: '15px'}}>
+            <button className={style.linkDrink}>Drinks Populares</button>
+        </NavLink>
 
-            <NavLink to="buscar">
-                Buscar Drinks
-            </NavLink>
+        <NavLink to="buscar"  style={{ marginRight: '15px'}}>
+            <button className={style.linkDrink}>Buscar Drinks</button>
+        </NavLink>
 
-            <Switch>
-                <Route path="/drinks/buscar">
-                    <DrinksBuscar />
-                </Route>
+        <NavLink to="aleatorios" >
+            <button className={style.linkDrink}>Aleatórios</button>
+        </NavLink>
 
-                <Route path="/drinks/popular">
-                    <DrinksPopulares />
-                </Route>
-            </Switch>
-        </div>
+        <Switch>
+            <Route path="/drinks/buscar">
+                <DrinksBuscar />
+            </Route>
+
+            <Route path="/drinks/popular">
+                <DrinksPopulares />
+            </Route>
+
+            <Route path="/drinks/aleatorios">
+                <DrinksAleatorios />
+            </Route>
+        </Switch> 
+
+
+        {/*reqDrinks && 
+            reqDrinks.map((key, id) => {
+                return (<div><Link key={id} to={`/drinks/${key.idDrink}`}>{key.strDrink}</Link><br /></div>)
+            })
+        */}
+    </div>
     )
 }
 export default Drinks

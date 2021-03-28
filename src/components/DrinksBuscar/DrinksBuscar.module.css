@@ -1,0 +1,44 @@
+.searchDrink {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.searchDrink input, .searchDrink button {
+    border: none;
+    height: 34px;
+    outline: none;
+}
+
+.searchDrink input {
+    width: 300px;
+    padding-left: 10px;
+    border: 1px solid var(--purple);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.searchDrink button {
+    padding: 0 16px;
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+.drinksResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.drinksResults > div {
+    width: 250px;
+    padding: 5px 10px;
+}
+
+.drinksResults > div > h2 {
+    font-size: 20px;
+    font-weight: 500;
+}

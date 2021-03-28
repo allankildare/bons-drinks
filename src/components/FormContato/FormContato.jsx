@@ -1,6 +1,6 @@
 import React from "react"
 import './FormContato.css'
-import contactPhoto from './../../assets/img/contact-pic.jpg'
+import contactPhoto from './../../img/contact-pic.jpg'
 import Button from './../Button/Button'
 import ContadorSegundos from "./../ContadorSegundos/ContadorSegundos";
 import Input from "./../Input/Input";
