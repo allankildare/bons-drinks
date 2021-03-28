@@ -10,15 +10,15 @@ function Drinks() {
         <div style={{textAlign:'center'}}>
             <h1 style={{ margin: '20px 0 30px'}}>Drinks</h1>
 
-        <NavLink to="popular"  style={{ marginRight: '15px'}}>
+        <NavLink to="/drinks/popular"  style={{ marginRight: '15px'}}>
             <button className={style.linkDrink}>Drinks Populares</button>
         </NavLink>
 
-        <NavLink to="buscar"  style={{ marginRight: '15px'}}>
+        <NavLink to="/drinks/buscar"  style={{ marginRight: '15px'}}>
             <button className={style.linkDrink}>Buscar Drinks</button>
         </NavLink>
 
-        <NavLink to="aleatorios" >
+        <NavLink to="/drinks/aleatorios" >
             <button className={style.linkDrink}>Aleatórios</button>
         </NavLink>
 
