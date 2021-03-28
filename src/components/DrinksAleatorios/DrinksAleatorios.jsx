@@ -1,16 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import { requisicaoDrinks } from '../Model/URL'
 import styled from 'styled-components'
-
-const Loading = styled.div`
-    height: 50px;
-    width: 50px;
-    border: 8px solid #b4b4b4;
-    border-radius: 50%;
-    border-top: 8px solid var(--purple);
-    margin: 0 auto;
-    animation: loading .6s infinite linear;
-`
+import Loading from '../Loading/Loading'
 
 const DrinksStyled = styled.div`
     display: flex;
