@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import style from './DrinksPopulares.module.css'
 import styled from 'styled-components'
 import Loading from '../Loading/Loading'
 
