@@ -15,7 +15,7 @@ export const StyledHeader = styled.header`
   grid-area: header;
 `
 export const NavMenu = styled.nav`
-  max-width: 1000px;
+  max-width: 1440px;
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
